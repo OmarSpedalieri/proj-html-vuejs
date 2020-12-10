@@ -15,7 +15,7 @@
     <!-- TOP CONTACTS BAR -->
 
     <!--  MAIN TO CENTER EVERYTHING -->
-    <main >
+    <main>
       <!-- HEADER WITH IMAGE AND NAVBAR -->
 
       <header>
@@ -51,7 +51,7 @@
                       <h1>GEN</h1>
                     </div>
                   </div>
-                  <!-- <img :src="logo" alt="logo"> -->
+
                 </div>
 
                 <div class="navbar_right ">
@@ -100,20 +100,21 @@
 
           <div id="excellence">
             <h4>WHO WE ARE</h4>
-            <h2>Excellence in Transport</h2>
+            <h2><span class="label green_text"><i class="far fa-gem"></i>Excellence</span>in Transport</h2>
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            <div class="">
-              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-              <ul>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-              </ul>
-            </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <ul id="excellence_list">
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum</li>
+                </ul>
+
           </div>
 
           <!-- SECTION_1  RIGHT SIDE VEHICLES AND CERTIFICATIONS-->
@@ -179,12 +180,10 @@
         <div class="container">
 
           <h4>ROAD TRANSPORT</h4>
-          <div class="title_services">
-            <h2>Main</h2>
-            <div class="green_label">
-              <h2>Services</h2>
-            </div>
-          </div>
+
+            <h2>Main <span class="label">Services</span> </h2>
+
+
 
           <div class=" desc flex-space-between">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo . </p>
@@ -239,15 +238,23 @@
 
       <section id="section_3">
         <div class="container flex-column">
-          <h4>HOW IT WORKS IN PRACTICE</h4>
-          <div class="title_services">
-            <div class="green_label">
-              <h2>Logistical</h2>
-            </div>
-            <h2>Procedure</h2>
-          </div>
+          <h4 class="green_text">HOW IT WORKS IN PRACTICE</h4>
+
+
+              <h2><span class="label green_text">Logistical</span>Procedure</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+
+
           <div class="steps">
             <div class="empty">
+              <div class="top">
+                <div class="line">
+                  <h3 class="number">01</h3>
+
+                </div>
+
+              </div>
 
             </div>
             <div class="step_box">
@@ -293,10 +300,9 @@
         <div class="container flex-column">
           <h4>WHAT ARE WE DOING</h4>
           <div class="title_services">
-            <div class="green_label">
-              <h2>Results</h2>
-            </div>
-            <h2>in Numbers</h2>
+
+              <h2> <span class="label">Results</span> in Numbers</h2>
+
           </div>
           <div class="result_boxes flex-space-between">
             <div class="result_box flex-column">
@@ -324,14 +330,9 @@
       <section id="section_5">
         <div class="container flex-column">
           <h4>CUSTOMERS TESTIMONIALS</h4>
-          <div class="title_feedback">
-            <div class="flex-space-between">
-              <h2>Trusted</h2>
-              <div class="green_label">
-                <h2>Feedback</h2>
-              </div>
-            </div>
-          </div>
+
+              <h2>Trusted<span class="label">Feedback</span></h2>
+
 
           <p id="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
@@ -383,10 +384,8 @@
           <div class="get_touch_left">
              <h4>SEND A MESSAGE</h4>
             <div class="title_services">
-              <h2>Get in</h2>
-              <div class="green_label">
-                <h2>Touch</h2>
-              </div>
+              <h2>Get in<span class="label green_text">Touch</span></h2>
+
             </div>
             <p>We will respond to your message as soon as possible.</p>
 
@@ -449,80 +448,57 @@
 
       <footer >
         <div class="container flex">
+          <div id="foot_links">
 
             <div id="footer_contacts">
 
               <!-- LOGO CREATION-->
 
               <div class="logo_divs flex-center">
-                <div class="nex">
-                  <h1>NEX</h1>
-                </div>
-                <div class="gen">
-                  <h1>GEN</h1>
-                </div>
+                  <h2><span class="label green_text">NEX</span>GEN</h2>
+
               </div>
 
 
               <p>A functional HTML template for Corporate & Business</p>
 
               <div class="">
-                <i class="fas fa-phone-alt"></i>
-                <a href="phone_number">+1 (305) 1234-5678</a>
-              </div>
-              <div class="">
-                <i class="fas fa-envelope"></i>
-                <a href="#">hello@example.com</a>
-              </div>
-              <div class="">
-                <i class="fas fa-map-marker-alt"></i>
-                <a href="#">Main Avenue, 987</a>
+                <ul>
+                  <li> <i :class="footer_contacts[0].icon"></i> {{footer_contacts[0].phone_number}}</li>
+                  <li> <i :class="footer_contacts[1].icon"></i> {{footer_contacts[1].mail}}</li>
+                  <li> <i :class="footer_contacts[2].icon"></i> {{footer_contacts[2].address}}</li>
+                </ul>
+
+
               </div>
 
               <div class="button_get_in_touch">
                 <h3>GET IN TOUCH</h3>
               </div>
+
             </div>
 
-          <div id="foot_links">
 
             <div class="footer_box">
-              <h1>About</h1>
+
                 <ul>
-                  <li v-for="(item, index) in footer_links[0].links"> <i class="fas fa-chevron-right"></i><a href="">{{item}}</a></li>
+                  <li class="title_footer">{{footer_links[0].title}} </li>
+                  <li v-for="(item, index) in footer_links[0].links"><i class="fas fa-chevron-right"></i>
+                    <a v-bind:href="item.link">{{item.name}}</a></li>
                 </ul>
             </div>
             <div class="footer_box">
-              <h1>Transport</h1>
                 <ul>
-                  <li v-for="(item, index) in footer_links[1].links"> <i class="fas fa-chevron-right"></i><a href="">{{item}}</a></li>
+                  <li class="title_footer">{{footer_links[1].title}} </li>
+                  <li v-for="(item, index) in footer_links[1].links"> <i class="fas fa-chevron-right"></i><a v-bind:href="item.link">{{item.name}}</a></li>
                 </ul>
             </div>
             <div class="footer_box">
-              <h1>Support</h1>
                 <ul>
-                  <li v-for="(item, index) in footer_links[2].links"> <i class="fas fa-chevron-right"></i><a href="">{{item}}</a></li>
+                  <li class="title_footer">{{footer_links[2].title}} </li>
+                  <li v-for="(item, index) in footer_links[2].links"> <i class="fas fa-chevron-right"></i><a v-bind:href="item.link">{{item.name}}</a></li>
                 </ul>
             </div>
-
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

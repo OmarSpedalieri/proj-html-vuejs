@@ -202,7 +202,7 @@ input{
   width: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
 }
 
@@ -210,11 +210,21 @@ input{
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items:center;
 }
 
+#excellence span i{
+  font-size: 2rem;
+  margin: 0 5px;
+}
 
+#excellence p{
+  margin: 10px 0;
+}
+#excellence_list{
+  margin-left: 15px;
+}
 
 .truck{
   background-color:#7fd2d5 ;
@@ -252,19 +262,6 @@ input{
   background-color: #121117;
 }
 
-.title_services{
-  display: flex;
-  justify-content: flex-start;
-}
-
-.green_label{
-  background-color: #038384;
-  opacity:.2;
-}
-
-/* .green_label h2{
-z-index: 100;
-} */
 
 .black_button{
   width: 100px;
@@ -336,8 +333,11 @@ z-index: 100;
   min-height: 250px;
 }
 .empty{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width:10%;
-    height: 90%;
+  height: 90%;
   background-color: green;
 }
 .step_box{
@@ -346,13 +346,29 @@ z-index: 100;
   height: 90%;
   background-color: red;
 }
+.top, .line{
+  width: 100%;
+}
+.top{
+  display: flex;
+  align-items:center;
+
+  height: 30px;
+}
+
+.line{
+  height: 3px;
+  background-color: black;
+}
 
 
 
 
 
 
-/* ----------------- SECTION 4 LAYOUT -------------  */
+
+
+/* ----------------- SECTION 4  RESULTS LAYOUT -------------  */
 
 #section_4{
   display: flex;
@@ -383,6 +399,18 @@ z-index: 100;
 }
 
 
+.label{
+  display: inline-block;
+  padding: 5px;
+  margin:0 5px;
+  border-radius: 5px;
+  font-size: 2rem;
+  background-color: rgba(3,131,132,.2);
+}
+
+
+
+
 /* ----------------- SECTION 5 LAYOUT -------------  */
 
 
@@ -394,10 +422,10 @@ z-index: 100;
   background-color: #191c1e;
 }
 
-.title_feedback{
-  display: flex;
+/* .title_feedback{
+  /* display: flex;
   justify-content: center;
-}
+}*/
 
 #section5 .service_box .icons img{
   max-width: 50px;
@@ -437,7 +465,7 @@ z-index: 100;
 
 
 
-/* ----------------- SECTION 4 GET IN TOUCH LAYOUT -------------  */
+/* ----------------- SECTION 6 GET IN TOUCH LAYOUT -------------  */
 
 
 
@@ -457,8 +485,18 @@ z-index: 100;
 }
 .get_touch_left h2{
   color: #21333e;
+}
+.green_text{
+  color: #058283;
+}
+.get_touch_left h2 span,.get_touch_left h4 {
 
 }
+
+
+
+
+
 .row{
   width: 100%;
   display: flex;
@@ -605,7 +643,14 @@ footer ul li {
   background-color: #19191f;
 
 }
+.title_footer{
+  margin:10px 0;
+  font-weight: bold;
+  font-size: 1.25rem;
 
+  color: white;
+
+}
 #foot_links{
   width: 100%;
   display: flex;
@@ -638,7 +683,7 @@ footer ul li {
 
 
 #footer_contacts{
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
