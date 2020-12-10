@@ -65,7 +65,9 @@ h2{
 .flex-column{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-around; */
 
 }
 
@@ -315,27 +317,96 @@ z-index: 100;
 
 
 
-
-
-
-
-
-
 /* ----------------- SECTION 4 LAYOUT -------------  */
 
 #section_4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height:1064px;
+  height:500px;
   background-image: url("../img/bg-10.jpg");
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size:cover;
+  background-position: center;
+
+}
+.result_boxes{
+  width: 100%;
+}
+.result_box{
+  width: 25%;
+  height: 150px;
+  border: solid 1px red;
+}
+
+.result_box h3{
+ color: #52bbbb;
+ font-size: 2rem;
 
 }
 
+
+/* ----------------- SECTION 5 LAYOUT -------------  */
+
+
 #section_5{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #191c1e;
 
 }
+
+.title_feedback{
+  display: flex;
+
+  justify-content: center;
+}
+
+#section5 .service_box .icons img{
+  max-width: 50px;
+  height: auto;
+}
+.quotation_marks{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #69696d;
+}
+
+#subtitle{
+  width: 55%;
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #section_6{
     background-color: #e6ece8;
