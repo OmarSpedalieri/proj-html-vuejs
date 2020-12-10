@@ -1,6 +1,6 @@
 /* -----------------  DEBUG -------------  */
 div, main, aside, li{
-  /* border: solid 1px red; */
+  border: solid 1px red;
   /* background-color: pink; */
 }
 
@@ -316,11 +316,35 @@ z-index: 100;
 
 
 
-/* ----------------- SECTION 3 LAYOUT -------------  */
+/* ----------------- SECTION 3 LOGISTICS LAYOUT -------------  */
 
 #section_3{
-  background-color: #e6ece8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:500px;
+  background-color: #eef4ed;
+}
+.steps{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  width: 100%;
+  min-height: 250px;
+}
+.empty{
+  width:10%;
+    height: 90%;
+  background-color: green;
+}
+.step_box{
+  /* margin:0 15px; //da levare dopo */
+  width: 16%;
+  height: 90%;
+  background-color: red;
 }
 
 
