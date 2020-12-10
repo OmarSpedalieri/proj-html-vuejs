@@ -41,7 +41,17 @@
             <div id="nav_links">
               <div class="flex-space-between">
                 <div class="navbar_left">
-                  <img :src="logo" alt="logo">
+                  <!-- LOGO CREATION-->
+
+                  <div class="logo_divs flex-center">
+                    <div class="nex">
+                      <h1>NEX</h1>
+                    </div>
+                    <div class="gen">
+                      <h1>GEN</h1>
+                    </div>
+                  </div>
+                  <!-- <img :src="logo" alt="logo"> -->
                 </div>
 
                 <div class="navbar_right ">
@@ -324,7 +334,71 @@
 
       <!-- SECTION_6 GET IN TOUCH-->
 
-      <section id="section_6">
+      <section id="section_6" class="flex-center">
+        <div class="container flex-space-between">
+
+
+          <div class="get_touch_left">
+             <h4>SEND A MESSAGE</h4>
+            <div class="title_services">
+              <h2>Get in</h2>
+              <div class="green_label">
+                <h2>Touch</h2>
+              </div>
+            </div>
+            <p>We will respond to your message as soon as possible.</p>
+
+            <form class="contact_form" action="index.html" method="post">
+              <div class="row">
+                <input type="text" name="" value="" placeholder="Name">
+                <input type="text" name="" value="" placeholder="Email">
+              </div>
+              <div class="row">
+                <input type="text" name="" value="" placeholder="Phone">
+                <input type="text" name="" value="" placeholder="More Info">
+              </div>
+
+              <textarea name="name" rows="6" cols="50" placeholder="Message"></textarea>
+
+              <div class="send_button flex-center">
+                <h3>SEND</h3>
+              </div>
+
+            </form>
+          </div>
+
+          <div class="get_touch_right">
+
+            <h2>Example Inc.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+            <div class="">
+              <i class="fas fa-phone-alt"></i>
+              <a href="phone_number">+1 (305) 1234-5678</a>
+            </div>
+            <div class="">
+              <i class="fas fa-envelope"></i>
+              <a href="#">hello@example.com</a>
+            </div>
+            <div class="">
+              <i class="fas fa-map-marker-alt"></i>
+              <a href="#">Main Avenue, 987</a>
+            </div>
+
+            <div class="view_map">
+              <h3>VIEW MAP</h3>
+            </div>
+
+          </div>
+      </div>
+
+
+
+
+
+
+
+
 
       </section>
 
@@ -335,12 +409,24 @@
         <div class="container flex">
 
             <div id="footer_contacts">
-              <h1>next gen</h1>
+
+              <!-- LOGO CREATION-->
+
+              <div class="logo_divs flex-center">
+                <div class="nex">
+                  <h1>NEX</h1>
+                </div>
+                <div class="gen">
+                  <h1>GEN</h1>
+                </div>
+              </div>
+
+
               <p>A functional HTML template for Corporate & Business</p>
 
               <div class="">
                 <i class="fas fa-phone-alt"></i>
-                <a href="#">+1 (305) 1234-5678</a>
+                <a href="phone_number">+1 (305) 1234-5678</a>
               </div>
               <div class="">
                 <i class="fas fa-envelope"></i>
@@ -348,7 +434,7 @@
               </div>
               <div class="">
                 <i class="fas fa-map-marker-alt"></i>
-                <a href="#">main Avenue, 987</a>
+                <a href="#">Main Avenue, 987</a>
               </div>
 
               <div class="button_get_in_touch">
@@ -357,24 +443,25 @@
             </div>
 
           <div id="foot_links">
-          <div class="footer_box">
-            <h1>About</h1>
-              <ul>
-                <li v-for="(item, index) in footer_links[0].links"> <i class="fas fa-chevron-right"></i><a href="">{{item}}</a></li>
-              </ul>
-          </div>
-          <div class="footer_box">
-            <h1>Transport</h1>
-              <ul>
-                <li v-for="(item, index) in footer_links[1].links"> <i class="fas fa-chevron-right"></i><a href="">{{item}}</a></li>
-              </ul>
-          </div>
-          <div class="footer_box">
-            <h1>Support</h1>
-              <ul>
-                <li v-for="(item, index) in footer_links[2].links"> <i class="fas fa-chevron-right"></i><a href="">{{item}}</a></li>
-              </ul>
-          </div>
+
+            <div class="footer_box">
+              <h1>About</h1>
+                <ul>
+                  <li v-for="(item, index) in footer_links[0].links"> <i class="fas fa-chevron-right"></i><a href="">{{item}}</a></li>
+                </ul>
+            </div>
+            <div class="footer_box">
+              <h1>Transport</h1>
+                <ul>
+                  <li v-for="(item, index) in footer_links[1].links"> <i class="fas fa-chevron-right"></i><a href="">{{item}}</a></li>
+                </ul>
+            </div>
+            <div class="footer_box">
+              <h1>Support</h1>
+                <ul>
+                  <li v-for="(item, index) in footer_links[2].links"> <i class="fas fa-chevron-right"></i><a href="">{{item}}</a></li>
+                </ul>
+            </div>
 
           </div>
 

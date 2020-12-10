@@ -23,6 +23,7 @@ var foot = new Vue({
 
 el:"#foot_links",
 data:{
+    // phone_number:+1 (305) 1234-5678,
     foot_index:0,
     footer_links:[
     {

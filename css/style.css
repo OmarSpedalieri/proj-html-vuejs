@@ -1,6 +1,6 @@
 /* -----------------  DEBUG -------------  */
 div, main, aside, li{
-  border: solid 1px red;
+  /* border: solid 1px red; */
   /* background-color: pink; */
 }
 
@@ -40,6 +40,9 @@ h2{
   font-size: 2rem;
 
 }
+input{
+  outline-style: none;
+}
 
 
 /* -----------------  LAYOUT MAIN RULES  -------------  */
@@ -74,6 +77,10 @@ h2{
   /* justify-content: space-around; */
 
 }
+
+
+
+
 
 
 
@@ -406,14 +413,109 @@ z-index: 100;
 
 
 
+/* ----------------- SECTION 4 GET IN TOUCH LAYOUT -------------  */
 
 
 
 
 #section_6{
-    background-color: #e6ece8;
+    /* background-color: #e6ece8; */
 
 }
+
+.get_touch_left{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 65%;
+  min-height: 300px;
+}
+.get_touch_left h2{
+  color: #21333e;
+
+}
+.row{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact_form{
+  width: 100%;
+}
+.send_button{
+  width: 70px;
+  height: 35px;
+  background-color:#038384 ;
+  border-radius: 5px;
+
+}
+.send_button h3{
+font-weight: lighter;
+}
+
+.get_touch_right{
+  width: 30%;
+  min-height: 300px;
+  color:#69696d;
+}
+
+.get_touch_right p, .get_touch_right div{
+  margin:10px 0;
+}
+
+.get_touch_right a,.get_touch_right i{
+  color: #038384 ;
+  text-decoration: none;
+}
+.get_touch_right h2{
+  color: #21333e;
+
+}
+
+.view_map{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 40px;
+  color: #038384 ;
+  border: solid 1px #038384 ;
+  border-radius: 5px;
+
+}
+
+ #section_6 form input[type=text]{
+   width: 48%;
+   height: 30px;
+   border: none;
+   margin: 5px 0;
+   padding:5px;
+   border-radius: 5px;
+   color:#21333e;
+   background-color: #ececec;
+}
+
+#section_6 textarea{
+  width: 100%;
+  height: 100px;
+  resize: none;
+  border: none;
+  padding:5px;
+  margin: 5px 0;
+  color:#21333e;
+  background-color: #ececec;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----------------- FOOTER LAYOUT -------------  */
@@ -438,20 +540,57 @@ footer ul li {
 
 }
 
+.nex, .gen{
+  width: 75px;
+  height: 40px;
+  padding: 5px;
+}
+.nex{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #038384;
+  color: #52bbbb;
+  opacity: .5;
+  border-radius: 20px 0 0 20px;
+}
+.nex h1{
+  color: #52bbbb;
+  z-index: 999;
+  font-size: 1.4rem;
+}
 
+.gen h1{
+  color: #bcbdbd;
+  font-size: 1.4rem;
+}
+
+
+
+.gen{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
 .footer_box{
-  width: 25%;
 
-background-color: #191c1e;
+  width: 25%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #19191f;
 
 }
 
 #foot_links{
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+
+#foot_links div{
+  margin: 0 20px;
 }
 #foot_links i{
   font-weight: lighter;
