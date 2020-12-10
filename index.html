@@ -19,9 +19,9 @@
       <!-- HEADER WITH IMAGE AND NAVBAR -->
 
       <header>
-
+        <!-- TOP FIXED NAVBAR -->
         <div class="fast_contacts container">
-          <div class="open_hours">
+          <div id="open_hours">
             <span>Open Hours: Mon- Sat - 9:00 - 18:00</span>
           </div>
           <div class="contacts">
@@ -34,17 +34,33 @@
         </div>
 
 
-
+        <!-- JUMBOTRON -->
         <div id="jumbotron" >
           <div class="container">
 
+            <div id="nav_links">
+              <div class="flex-space-between">
+                <div class="navbar_left">
+                  <img :src="logo" alt="logo">
+                </div>
 
-            <nav>
+                <div class="navbar_right ">
+                  <ul class="flex-center">
+                    <li v-for="element in links"> <a href="">{{element}}</a> </li>
+                    <li> <a href=""><i class="far fa-user"></i></a></li>
+                    <li>
+                      <div id="button_get_in_touch">
+                        <h3>GET IN TOUCH</h3>
+                      </div>
+                    </li>
 
-              <!-- FILL WITH VUE -->
-            </nav>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
             <div id="opening">
+
               <h3>LOGISTICS SERVICES</h3>
               <h1>CARGO </h1> <h1>TRANSPORT</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -67,24 +83,145 @@
 
       <!-- SECTION_1 CERTIFICATIONS-->
 
+      <!-- SECTION_1 LEFT SIDE DESCRIPTION -->
+
       <section id="section_1" >
-        <div class="container">
+        <div class="container flex-space-between ">
 
-          <div class="excellence">
-
+          <div id="excellence">
+            <h4>WHO WE ARE</h4>
+            <h2>Excellence in Transport</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div class="">
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+              </ul>
+            </div>
           </div>
-          <div class="vehicles">
 
+          <!-- SECTION_1  RIGHT SIDE VEHICLES AND CERTIFICATIONS-->
+
+          <div id="vehicles">
+
+            <div class="vehicle_box">
+              <h3>Vehicle types</h3>
+              <div class="vehicle flex-space-between ">
+                <div class="truck">
+                  <img src="img/truck-1.png" alt="truck">
+                </div>
+
+                <div class="vehicle_desc">
+                  <h3>Light</h3>
+                  <h5>Max Weight 1200 Kg</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="vehicle_box">
+              <h3>Vehicle types</h3>
+              <div class="vehicle flex-space-between ">
+                <div class="truck">
+                  <img src="img/truck-1.png" alt="truck">
+                </div>
+
+                <div class="vehicle_desc">
+                  <h3>Light</h3>
+                  <h5>Max Weight 6000 Kg</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="vehicle_box">
+              <h3>Vehicle types</h3>
+              <div class="vehicle flex-space-between ">
+                <div class="truck">
+                  <img src="img/truck-1.png" alt="truck">
+                </div>
+
+                <div class="vehicle_desc">
+                  <h3>Light</h3>
+                  <h5>Max Weight 24000 Kg</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="vehicle_box">
+                <h3>Certification</h3>
+                <div class="cert-logo flex-space-between">
+                  <img src="img/certificate.png" alt="certificate">
+                  <img src="img/certificate.png" alt="certificate">
+                </div>
+            </div>
           </div>
-
         </div>
-
       </section>
 
       <!-- SECTION_2 SERVICES-->
 
       <section id="section_2">
+        <div class="container">
 
+          <h4>ROAD TRANSPORT</h4>
+          <div class="title_services">
+            <h2>Main</h2>
+            <div class="green_label">
+              <h2>Services</h2>
+            </div>
+          </div>
+
+          <div class=" desc flex-space-between">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo . </p>
+            <div class="black_button flex-center">
+              <h3>SEE ALL</h3>
+            </div>
+          </div>
+
+
+          <!-- SECTION_2 BOXES-->
+
+          <div class="boxes flex-space-between">
+
+            <div class="service_box">
+              <div class="icons flex-space-between">
+                <div class="round_icon flex-center">
+                  <i class="fas fa-truck-loading"></i>
+                </div>
+                  <i class="fas fa-arrow-right"></i>
+              </div>
+              <h3 class="service_title">Technology</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+            </div>
+
+            <div class="service_box">
+              <div class="icons flex-space-between">
+                <div class="round_icon flex-center">
+                  <i class="fas fa-temperature-low"></i>
+                </div>
+                  <i class="fas fa-arrow-right"></i>
+              </div>
+              <h3 class="service_title">Technology</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+            </div>
+
+            <div class="service_box">
+              <div class="icons flex-space-between">
+                <div class="round_icon flex-center">
+                  <i class="fas fa-boxes"></i>
+                </div>
+                  <i class="fas fa-arrow-right"></i>
+              </div>
+              <h3 class="service_title">Technology</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+            </div>
+          </div>
+        </div>
       </section>
 
 

@@ -36,12 +36,48 @@ header{
   background-color:#21333e;
 }
 
+h2{
+  font-size: 2rem;
+
+}
+
+
+/* -----------------  LAYOUT MAIN RULES  -------------  */
+.container{
+  width: 80%;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+
+
+/* -----------------  FIXED TOP NAVBAR  -------------  */
+
 .fast_contacts{
   position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 40px;
   color: #bcbdbd;
 }
@@ -57,17 +93,37 @@ header{
 
 }
 
-.container{
-  width: 80%;
+/* -----------------  JUMBOTRON SECTION -------------  */
+
+/* -----------------  NAVBAR  -------------  */
+
+.navbar_right ul li{
+    list-style: none;
 }
+.navbar_left, .navbar_right{
+  max-height: 80px;
+}
+.navbar_left img{
+  max-height: 50%;
+}
+
+.navbar_right ul li a{
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+}
+
+/* -----------------  JUMBOTRON IMAGE AND TEXT  -------------  */
+
 
 #jumbotron{
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items:flex-start;
   width: 100%;;
   height:700px;
   margin-top: 40px;
+  padding-top: 10px;
   background-image: url("../img/bg-9.jpg");
   background-repeat: no-repeat;
   background-size:cover;
@@ -80,22 +136,21 @@ header{
 }
 
 #opening h3{
-font-size: 1rem;
-font-weight: normal;
-color: #52bbbb;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #52bbbb;
 }
 
 #opening h1{
-font-size: 4rem;
-font-weight: bolder;
-margin: 10px ;
+  font-size: 4rem;
+  font-weight: bolder;
+  margin: 10px ;
 }
 
 #buttons{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
 }
 
 #button_get_in_touch{
@@ -116,46 +171,157 @@ margin: 10px ;
   border: solid 1px #52bbbb;
 }
 
-/* SECTION 1 LAYOUT */
+
+/* ----------------- SECTION 1 LAYOUT -------------  */
+
+
 #section_1{
   display: flex;
   justify-content: center;
-  background-color: #e6ece8;
 }
 
-.excellence, .vehicles{
-  width: 50%;
-  min-height: 200px;
-  background-color: pink;
+#excellence, #vehicles{
+  color: #21363b;
+  min-height: 500px;
 
+}
+#excellence{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#vehicles{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:center;
 }
 
 
 
+.truck{
+  background-color:#7fd2d5 ;
+}
 
+.vehicle_box{
+  width: 70%;
+}
 
+.vehicle img{
+  max-height: 60px;
+}
 
+.vehicle_desc h5{
+  font-size: .9rem;
+  font-weight: lighter;
+}
 
+.vehicle{
+  display: flex;
+}
 
+.cert-logo img{
+  max-width: 100px;
+  height: auto;
+}
 
-
-
-
-
-
-
-
-
+/* ----------------- SECTION 2 LAYOUT -------------  */
 
 #section_2{
-  background-color: #191c1e;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #121117;
 }
+
+.title_services{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.green_label{
+  background-color: #038384;
+  opacity:.2;
+}
+
+/* .green_label h2{
+z-index: 100;
+} */
+
+.black_button{
+  width: 100px;
+  border: solid 1px #038384;
+}
+
+.desc p{
+  width: 75%;
+}
+
+.boxes{
+  min-height: 50%;
+}
+
+.service_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 32%;
+  height: 250px;
+  padding: 15px;
+  background-color: #191c1e;
+  border-radius: 10px;
+}
+
+.icons .fa-truck-loading, .icons .fa-temperature-low, .icons .fa-boxes{
+  font-size: 2.5rem;
+  color:#038384;
+}
+
+.service_box h3{
+  font-size: 1.5rem;
+}
+
+.round_icon{
+  width: 60px;
+  height: 60px;
+  padding:5px;
+  background-color:#16282e;
+  border-radius: 50%;
+}
+
+.fa-arrow-right{
+  font-size: 1.5rem;
+  color:#038384;
+}
+
+
+
+
+
+/* ----------------- SECTION 3 LAYOUT -------------  */
 
 #section_3{
   background-color: #e6ece8;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------- SECTION 4 LAYOUT -------------  */
 
 #section_4{
   width: 100%;
