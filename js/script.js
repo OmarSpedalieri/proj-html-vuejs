@@ -1,3 +1,4 @@
+
 var nav = new Vue({
 
 el:"#nav_links",

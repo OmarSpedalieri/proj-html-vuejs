@@ -27,7 +27,8 @@ body{
 
 section{
   width: 100%;
-  min-height: 500px;
+  padding: 40px;
+  /* min-height: 500px; */
 }
 
 header{
@@ -126,19 +127,29 @@ input{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 40px;
+  height: 30px;
   color: #bcbdbd;
 }
+.fast_contacts i {
+  margin-left: 10px;
+  font-size: .7rem;
+}
 
-.contacts i {
-  margin-left: 20px;
+#open_hours i, #open_hours span {
+  margin-right: 10px;
+  font-size: .7rem;
 }
 
 .contacts a{
-  margin: 0 20px;
+  margin: 0 10px;
   color: #bcbdbd;
+  font-size: .7rem;
   text-decoration: none;
 }
+/* #fix_nav_links li{
+  display: flex;
+  justify-content: space-between;
+} */
 
 /* -----------------  JUMBOTRON SECTION -------------  */
 
@@ -159,7 +170,7 @@ input{
 .navbar_right ul li a{
   text-decoration: none;
   color: white;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .logo h2, .logo #nex {
@@ -180,7 +191,7 @@ input{
   align-items:flex-start;
   width: 100%;;
   height:600px;
-  margin-top: 40px;
+  margin-top: 30px;
   padding-top: 10px;
   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)),url(../img/bg-9.jpg);
   background-repeat: no-repeat;
@@ -190,7 +201,7 @@ input{
 #opening{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items:flex-start;
   min-height: 250px;
   margin-top: 12%;
@@ -312,7 +323,12 @@ input{
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 10px 0;
+  min-height: 60px;
+  /* margin: 10px 0; */
+}
+
+.bottom_border{
+  border-bottom: solid 1px #bcbdbd;
 }
 
 .vehicle img{
@@ -327,28 +343,31 @@ input{
 
 .vehicle{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cert-logo{
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
 .cert-logo img{
   max-width: 90px;
   height: auto;
+  margin-right: 20px;
 }
 .vehicle_title{
-  margin-left: 30px;
+  margin-left: 10px;
   margin-top: 20px;
 }
 .separator{
   margin: 0 auto;
-  width: 75%;
+  width: 90%;
   border: 0.5px solid #bfbfbf;
 
 }
 
-/* ----------------- SECTION 2 LAYOUT -------------  */
+/* ----------------- SECTION 2 SERVICES LAYOUT -------------  */
 
 #section_2{
   display: flex;
@@ -394,9 +413,9 @@ font-weight: lighter;
   flex-direction: column;
   justify-content: center;
   width: 32%;
-  height: 220px;
+  MIN-height: 200px;
   padding: 20px;
-  background-color: #191c1e;
+  background-color: #19191f;
   border-radius: 10px;
 }
 
@@ -494,7 +513,7 @@ font-weight: lighter;
   align-items: center;
   text-align: center;
   width: 100%;
-  height:500px;
+  min-height:400px;
   background-image: url("../img/bg-10.jpg");
   background-repeat: no-repeat;
   background-size:cover;
@@ -532,7 +551,7 @@ font-weight: lighter;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #191c1e;
+  background-color: #111117;
   text-align: center;
 }
 
@@ -567,9 +586,9 @@ font-weight: lighter;
   justify-content: center;
   width: 32%;
   height: 220px;
-  padding: 20px;
-  background-color: #191c1e;
-  border-radius: 10px;
+  padding: 10px;
+  background-color: #19191f;
+  border-radius: 5px;
   text-align: left;
 }
 
@@ -578,11 +597,8 @@ font-weight: lighter;
 /* ----------------- SECTION 6 GET IN TOUCH LAYOUT -------------  */
 
 
-
-
 #section_6{
-    /* background-color: #e6ece8; */
-
+min-height: 500px;
 }
 
 .get_touch_left{
@@ -610,11 +626,11 @@ font-weight: lighter;
 }
 
 .get_touch_left p {
-  margin:20px 0;
+  margin-bottom:20px;
 }
 
 .form_contact{
-  margin:30px 0;
+  margin:15px 0;
 }
 
 
@@ -649,7 +665,7 @@ font-weight: lighter;
 }
 
 .get_touch_right p{
-  margin:10px 0;
+  margin:15px 0;
 }
 
 .get_touch_right a{
@@ -680,7 +696,7 @@ font-weight: lighter;
   display:flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 45%;
   height: 30px;
   color: #038384 ;
   border: solid 1px #038384 ;
@@ -690,6 +706,7 @@ font-weight: lighter;
 
 .view_map h3{
   font-weight: normal;
+  font-size: .9rem;
 }
 
 
@@ -732,6 +749,7 @@ font-weight: lighter;
 
 footer{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -744,44 +762,12 @@ footer ul li a{
   list-style: none;
   color: white;
 }
+
 footer ul li {
-
   list-style: none;
-
-}
-
-.nex, .gen{
-  width: 75px;
-  height: 40px;
-  padding: 5px;
-}
-.nex{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #038384;
-  color: #52bbbb;
-  opacity: .5;
-  border-radius: 20px 0 0 20px;
-}
-.nex h1{
-  color: #52bbbb;
-  z-index: 999;
-  font-size: 1.4rem;
-}
-
-.gen h1{
-  color: #bcbdbd;
-  font-size: 1.4rem;
 }
 
 
-
-.gen{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
 
 .footer_box{
   width: 25%;
@@ -789,15 +775,11 @@ footer ul li {
   border-radius: 10px;
   background-color: #19191f;
 }
-.footer_box i{
-color: red;
 
-}
 .title_footer{
   margin:10px 0;
   font-weight: bold;
   font-size: 1.4rem;
-
   color: white;
 
 }
@@ -823,11 +805,13 @@ color: red;
 #foot_links div{
   margin: 0 10px;
 }
+
 #foot_links i{
   font-weight: lighter;
   color: #bcbdbd;
   margin: 0 5px;
 }
+
 #foot_links h1{
   font-size: 1.25rem;
   margin: 10px 5px;
@@ -844,7 +828,6 @@ color: red;
   font-size: .8rem;
 }
 
-
 #footer_contacts{
   width: 30%;
   display: flex;
@@ -857,4 +840,27 @@ color: red;
 #footer_contacts p{
   font-size: .8rem;
   margin-left: 10px;
+}
+
+/* -----------------    CREDITS LAYOUT -------------  */
+
+
+#credits{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+
+}
+
+#fixed_footer p{
+  font-size: .7rem;
+}
+
+#fixed_footer{
+  display: flex;
+  justify-content: center;
+  max-height: 80px;
+  padding: 10px 0;
+  background-color: black;
 }
