@@ -13,22 +13,13 @@ div, main, aside, li{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
   font-size: 14px;
 }
 
 body{
-  /* display: flex;
-  justify-content: center; */
   width: 100vw;
   height: 100vh;
   color: white;
-}
-
-section{
-  width: 100%;
-  padding: 40px;
-  /* min-height: 500px; */
 }
 
 header{
@@ -37,10 +28,6 @@ header{
   background-color:#21333e;
 }
 
-/* h2{
-  font-size: 2rem;
-
-} */
 input{
   outline-style: none;
 }
@@ -49,6 +36,10 @@ input{
 /* -----------------  LAYOUT MAIN RULES  -------------  */
 .container{
   width: 70%;
+}
+
+.container2{
+  width: 90%;
 }
 
 .flex{
@@ -60,6 +51,7 @@ input{
     justify-content: center;
     align-items: center;
 }
+
 .flex-space-between {
     display: flex;
     justify-content: space-between;
@@ -97,7 +89,6 @@ input{
   padding: 5px;
   margin:0 5px;
   border-radius: 20px 0 0 20px;
-  /* font-size: 2rem; */
   background-color: rgba(3,131,132,.2);
 }
 
@@ -110,15 +101,12 @@ input{
 .green{
   color:#00a6a6;
 }
+.lightgreen{
+  color:#00a6a6;
+}
 .black{
   color: #21333e;
 }
-
-
-
-
-
-
 
 /* -----------------  FIXED TOP NAVBAR  -------------  */
 
@@ -129,6 +117,7 @@ input{
   align-items: center;
   height: 30px;
   color: #bcbdbd;
+  padding:0 10px;
 }
 .fast_contacts i {
   margin-left: 10px;
@@ -146,17 +135,13 @@ input{
   font-size: .7rem;
   text-decoration: none;
 }
-/* #fix_nav_links li{
-  display: flex;
-  justify-content: space-between;
-} */
 
 /* -----------------  JUMBOTRON SECTION -------------  */
 
 /* -----------------  NAVBAR  -------------  */
 
 .navbar_right ul li{
-    list-style: none;
+  list-style: none;
 }
 .navbar_left, .navbar_right{
   max-height: 80px;
@@ -183,16 +168,14 @@ input{
 
 /* -----------------  JUMBOTRON IMAGE AND TEXT  -------------  */
 
-
 #jumbotron{
-
   display: flex;
   justify-content: center;
   align-items:flex-start;
   width: 100%;;
   height:600px;
   margin-top: 30px;
-  padding-top: 10px;
+  padding:20px;
   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)),url(../img/bg-9.jpg);
   background-repeat: no-repeat;
   background-size:cover;
@@ -210,13 +193,11 @@ input{
 #opening h3{
   font-size: .8rem;
   font-weight: normal;
-
 }
 
 #opening h1{
   font-size: 3rem;
   font-weight:bolder;
-  /* margin: 5px ; */
 }
 
 #buttons{
@@ -235,14 +216,12 @@ input{
   height: 30px;
   background-color: #058283;
   border-radius: 3px;
-
 }
 
 .button_get_in_touch h3{
   font-size: .8rem;
   font-weight: lighter;
 }
-
 
 #read_more{
   display: flex;
@@ -255,19 +234,17 @@ input{
 }
 
 
-/* ----------------- SECTION 1 LAYOUT -------------  */
+/* ----------------- SECTION 1 EXCELLENCE LAYOUT -------------  */
 
 
 #section_1{
   display: flex;
   justify-content: center;
-  min-height: 500px;
+  padding:40px
 }
 
 #excellence, #vehicles{
   color: #21363b;
-  /* min-height: 500px; */
-
 }
 #excellence{
   width: 70%;
@@ -277,21 +254,21 @@ input{
   justify-content: center;
   align-items: flex-start;
 }
-#quote{
 
+#quote{
   min-height: 60px;
   padding-left: 10px;
   font-style: italic;
   border-left: solid 3px #daeced;
 }
+
 #vehicles{
-  width: 30%;
+  width: 25%;
   min-height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:flex-start;
-
 }
 #excellence h4{
   font-size: .8rem;
@@ -310,30 +287,35 @@ input{
 #excellence p{
   margin: 10px 0;
 }
+
 #excellence_list{
   margin-left: 15px;
 }
 
 .truck{
+  margin-right: 10px;
+  height: 80%;
   background-color:#daeced ;
-  margin-right: 15px;
+  margin-right:10px 10px;
 }
 
 .vehicle_box{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
   min-height: 60px;
-  /* margin: 10px 0; */
+  ;
 }
 
 .bottom_border{
+  width: 80%;
   border-bottom: solid 1px #bcbdbd;
 }
 
-.vehicle img{
-  max-height: 35px;
+.truck img{
 
+  max-height: 35px;
 }
 
 .vehicle_desc h5{
@@ -341,30 +323,25 @@ input{
   font-weight: lighter;
 }
 
-.vehicle{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .cert-logo{
+  display: flex;
+  justify-content: flex-start;
   width: 100%;
   height: auto;
 }
 
 .cert-logo img{
-  max-width: 90px;
+  max-width: 85px;
   height: auto;
-  margin-right: 20px;
+  margin-right: 10px;
 }
-.vehicle_title{
-  margin-left: 10px;
-  margin-top: 20px;
-}
-.separator{
-  margin: 0 auto;
-  width: 90%;
-  border: 0.5px solid #bfbfbf;
 
+.vehicle_title{
+  margin: 20px 0 ;
+}
+
+.separator{
+  min-height: 10px;
 }
 
 /* ----------------- SECTION 2 SERVICES LAYOUT -------------  */
@@ -374,6 +351,7 @@ input{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding:40px;
   background-color: #121117;
 }
 #section_2 h4{
@@ -393,7 +371,7 @@ input{
 }
 
 .black_button  h3{
-font-weight: lighter;
+  font-weight: lighter;
 }
 
 .desc p{
@@ -413,7 +391,7 @@ font-weight: lighter;
   flex-direction: column;
   justify-content: center;
   width: 32%;
-  MIN-height: 200px;
+  min-height: 200px;
   padding: 20px;
   background-color: #19191f;
   border-radius: 10px;
@@ -423,6 +401,7 @@ font-weight: lighter;
   font-size: 1.5rem;
   color:#038384;
 }
+
 .icons, .service_title{
   margin: 10px 0;
 }
@@ -430,7 +409,6 @@ font-weight: lighter;
 .service_box h3{
   font-size: 1.1rem;
 }
-
 
 .round_icon{
   width: 40px;
@@ -445,64 +423,86 @@ font-weight: lighter;
   color:#038384;
 }
 
-
-
-
-
 /* ----------------- SECTION 3 LOGISTICS LAYOUT -------------  */
 
 #section_3{
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 450px;
+  background-color: #eef4ed;
+}
+
+#section_3 .logistic_title div{
+  text-align: center;
+}
+
+#section_3 .logistic_title h2{
+  font-size: 2rem;
+  margin:15px 0;
+}
+
+#section_3 .logistic_title h4{
+  font-size: .8rem;
+
+}
+
+.logistic_title{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height:500px;
-  background-color: #eef4ed;
+  min-height: 200px;
+  border-bottom: solid 3px #cce3de;
 }
-.steps{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
+.steps_row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  min-height: 250px;
+  min-height: 100%;
 }
-.empty{
+
+.step_box{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width:10%;
-  height: 90%;
-  background-color: green;
-}
-.step_box{
-  /* margin:0 15px; //da levare dopo */
-  width: 16%;
-  height: 90%;
-  background-color: red;
-}
-.top, .line{
-  width: 100%;
-}
-.top{
-  display: flex;
-  align-items:center;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  height: 100%;
+  padding: 0 10px;
+  margin-bottom: 50px;
 
-  height: 30px;
 }
 
-.line{
-  height: 3px;
-  background-color: black;
+.number{
+  color: #00a6a6;
+  background-color:#daeced;
+  border-radius: 50%;
+  padding:5px;
 }
 
+.step_box h2,.step_box p{
+  margin: 10px 0;
+}
 
+.step_box p{
+  font-size: .8rem;
+}
 
+.step_box h2{
+  font-size: 1.2rem;
+}
 
-
-
-
+.step_box h3{
+  margin-top: -10px;
+}
 
 /* ----------------- SECTION 4  RESULTS LAYOUT -------------  */
 
@@ -518,33 +518,33 @@ font-weight: lighter;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
-
 }
+
 #section_4 h2{
   font-size: 2rem;
   margin: 10px 0;
 }
+
 #section_4 h4{
   font-size: .8rem;
 }
+
 .result_boxes{
   width: 100%;
 }
+
 .result_box{
   justify-content: center;
   width: 25%;
   height: 150px;
-  border: solid 1px red;
 }
 
 .result_box h3{
  color: #52bbbb;
  font-size: 2rem;
-
 }
 
 /* ----------------- SECTION 5  FEEDBACK LAYOUT -------------  */
-
 
 #section_5{
   display: flex;
@@ -553,6 +553,7 @@ font-weight: lighter;
   align-items: center;
   background-color: #111117;
   text-align: center;
+  padding:40px;
 }
 
 #section_5 h4{
@@ -592,13 +593,10 @@ font-weight: lighter;
   text-align: left;
 }
 
-
-
 /* ----------------- SECTION 6 GET IN TOUCH LAYOUT -------------  */
 
-
 #section_6{
-min-height: 500px;
+  min-height: 500px;
 }
 
 .get_touch_left{
@@ -609,12 +607,15 @@ min-height: 500px;
   width: 65%;
   min-height: 300px;
 }
+
 .get_touch_left h2{
   color: #21333e;
 }
+
 .green_text{
   color: #058283;
 }
+
 .get_touch_left h2 {
   font-size: 2rem;
   margin: 10px 0;
@@ -633,29 +634,25 @@ min-height: 500px;
   margin:15px 0;
 }
 
-
-
-
-
-
-
 .row{
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .contact_form{
   width: 100%;
 }
+
 .send_button{
   width: 70px;
   height: 30px;
   background-color:#038384 ;
   border-radius: 3px;
-
 }
+
 .send_button h3{
-font-weight: lighter;
+  font-weight: lighter;
 }
 
 .get_touch_right{
@@ -674,7 +671,6 @@ font-weight: lighter;
   margin-left: 10px;
 }
 
-
 .get_touch_right i{
   text-align: center;
   background-color: #daeced;
@@ -685,7 +681,6 @@ font-weight: lighter;
   color: #038384 ;
   text-decoration: none;
 }
-
 
 .get_touch_right h2{
   color: #21333e;
@@ -709,17 +704,15 @@ font-weight: lighter;
   font-size: .9rem;
 }
 
-
-
- #section_6 form input{
-   width: 48%;
-   height: 30px;
-   border: none;
-   margin: 5px 0;
-   padding:5px;
-   border-radius: 3px;
-   color:#21333e;
-   background-color: #ececec;
+#section_6 form input{
+  width: 48%;
+  height: 30px;
+  border: none;
+  margin: 5px 0;
+  padding:5px;
+  border-radius: 3px;
+  color:#21333e;
+  background-color: #ececec;
 }
 
 #section_6 textarea{
@@ -733,17 +726,6 @@ font-weight: lighter;
   color:#21333e;
   background-color: #ececec;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* ----------------- FOOTER LAYOUT -------------  */
 
@@ -767,8 +749,6 @@ footer ul li {
   list-style: none;
 }
 
-
-
 .footer_box{
   width: 25%;
   padding: 10px;
@@ -781,7 +761,6 @@ footer ul li {
   font-weight: bold;
   font-size: 1.4rem;
   color: white;
-
 }
 
 .button_footer{
@@ -842,6 +821,10 @@ footer ul li {
   margin-left: 10px;
 }
 
+#footer_contacts  div h2 span{
+  text-align: right;
+}
+
 /* -----------------    CREDITS LAYOUT -------------  */
 
 
@@ -850,7 +833,6 @@ footer ul li {
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
-
 }
 
 #fixed_footer p{

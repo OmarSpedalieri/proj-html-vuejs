@@ -1,4 +1,4 @@
-
+//***************  NAVBAR CREATION LINKS*******************
 var nav = new Vue({
 
 el:"#nav_links",
@@ -13,15 +13,17 @@ data:{
   },
 methods:{
 
-
   }
 
 });
 
+
+//***************  FOOTER  CREATION LINKS*******************
 var foot = new Vue({
 
 el:"#foot_links",
 data:{
+
     desc:"A functional HTML template for Corporate & Business",
     footer_contacts:[
       {icon:'fas fa-phone-alt',text:'+1 (305) 1234-5678'},
