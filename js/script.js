@@ -23,9 +23,9 @@ el:"#foot_links",
 data:{
     desc:"A functional HTML template for Corporate & Business",
     footer_contacts:[
-      {icon:'fas fa-phone-alt',phone_number:'+1 (305) 1234-5678'},
-      {icon:'fas fa-envelope',mail:'hello@example.com'},
-      {icon:'fas fa-map-marker-alt',address:'Main Avenue, 987'}
+      {icon:'fas fa-phone-alt',text:'+1 (305) 1234-5678'},
+      {icon:'fas fa-envelope',text:'hello@example.com'},
+      {icon:'fas fa-map-marker-alt',text:'Main Avenue, 987'}
 
     ],
     footer_links:

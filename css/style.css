@@ -1,6 +1,6 @@
 /* -----------------  DEBUG -------------  */
 div, main, aside, li{
-  border: solid 1px red;
+  /* border: solid 1px red; */
   /* background-color: pink; */
 }
 
@@ -36,10 +36,10 @@ header{
   background-color:#21333e;
 }
 
-h2{
+/* h2{
   font-size: 2rem;
 
-}
+} */
 input{
   outline-style: none;
 }
@@ -47,7 +47,7 @@ input{
 
 /* -----------------  LAYOUT MAIN RULES  -------------  */
 .container{
-  width: 80%;
+  width: 70%;
 }
 
 .flex{
@@ -72,10 +72,45 @@ input{
 .flex-column{
   display: flex;
   flex-direction: column;
+}
+
+.center_col{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* justify-content: space-around; */
+}
 
+.label{
+  display: inline-block;
+  padding: 5px;
+  margin:0 5px;
+  border-radius: 5px;
+  font-size: 2rem;
+  background-color: rgba(3,131,132,.2);
+}
+
+.logo_label{
+  display: inline-block;
+  width: 50px;
+  padding: 5px;
+  margin:0 5px;
+  border-radius: 20px 0 0 20px;
+  /* font-size: 2rem; */
+  background-color: rgba(3,131,132,.2);
+}
+
+.white{
+  color:white;
+}
+.grey{
+  color:#bcbdbd;
+}
+.green{
+  color:#00a6a6;
+}
+.black{
+  color: #21333e;
 }
 
 
@@ -103,7 +138,6 @@ input{
   margin: 0 20px;
   color: #bcbdbd;
   text-decoration: none;
-
 }
 
 /* -----------------  JUMBOTRON SECTION -------------  */
@@ -115,6 +149,8 @@ input{
 }
 .navbar_left, .navbar_right{
   max-height: 80px;
+  display: flex;
+  align-items: center;
 }
 .navbar_left img{
   max-height: 50%;
@@ -126,44 +162,58 @@ input{
   margin: 0 20px;
 }
 
+.logo h2, .logo #nex {
+  font-size: 1rem;
+}
+
+#nex{
+  text-align: right;
+}
+
 /* -----------------  JUMBOTRON IMAGE AND TEXT  -------------  */
 
 
 #jumbotron{
+
   display: flex;
   justify-content: center;
   align-items:flex-start;
   width: 100%;;
-  height:700px;
+  height:600px;
   margin-top: 40px;
   padding-top: 10px;
-  background-image: url("../img/bg-9.jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)),url(../img/bg-9.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
+
 #opening{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items:flex-start;
+  min-height: 250px;
+  margin-top: 12%;
 }
 
 #opening h3{
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: normal;
-  color: #52bbbb;
+
 }
 
 #opening h1{
-  font-size: 4rem;
-  font-weight: bolder;
-  margin: 10px ;
+  font-size: 3rem;
+  font-weight:bolder;
+  /* margin: 5px ; */
 }
 
 #buttons{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  width: 230px;
+  margin-top: 20px;
 }
 
 .button_get_in_touch{
@@ -172,8 +222,16 @@ input{
   align-items: center;
   width: 100px;
   height: 30px;
-  background-color: #52bbbb;
+  background-color: #058283;
+  border-radius: 3px;
+
 }
+
+.button_get_in_touch h3{
+  font-size: .8rem;
+  font-weight: lighter;
+}
+
 
 #read_more{
   display: flex;
@@ -182,6 +240,7 @@ input{
   width: 100px;
   height: 30px;
   border: solid 1px #52bbbb;
+  border-radius: 3px;
 }
 
 
@@ -191,27 +250,45 @@ input{
 #section_1{
   display: flex;
   justify-content: center;
+  min-height: 500px;
 }
 
 #excellence, #vehicles{
   color: #21363b;
-  min-height: 500px;
+  /* min-height: 500px; */
 
 }
 #excellence{
   width: 70%;
+  min-height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
+#quote{
 
+  min-height: 60px;
+  padding-left: 10px;
+  font-style: italic;
+  border-left: solid 3px #daeced;
+}
 #vehicles{
   width: 30%;
+  min-height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items:flex-start;
+
+}
+#excellence h4{
+  font-size: .8rem;
+  margin: 10px 5px;
+}
+#excellence h2{
+  font-weight: bolder;
+  font-size: 2rem;
 }
 
 #excellence span i{
@@ -227,15 +304,20 @@ input{
 }
 
 .truck{
-  background-color:#7fd2d5 ;
+  background-color:#daeced ;
+  margin-right: 15px;
 }
 
 .vehicle_box{
-  width: 70%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
 }
 
 .vehicle img{
-  max-height: 60px;
+  max-height: 35px;
+
 }
 
 .vehicle_desc h5{
@@ -246,10 +328,24 @@ input{
 .vehicle{
   display: flex;
 }
+.cert-logo{
+  width: 80%;
+  height: auto;
+}
 
 .cert-logo img{
-  max-width: 100px;
+  max-width: 90px;
   height: auto;
+}
+.vehicle_title{
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.separator{
+  margin: 0 auto;
+  width: 75%;
+  border: 0.5px solid #bfbfbf;
+
 }
 
 /* ----------------- SECTION 2 LAYOUT -------------  */
@@ -261,11 +357,24 @@ input{
   align-items: center;
   background-color: #121117;
 }
-
+#section_2 h4{
+  font-size: .8rem;
+}
+#section_2 h2{
+  font-size: 2rem;
+}
+#section_2 p{
+  font-size: .8rem;
+}
 
 .black_button{
-  width: 100px;
+  width: 80px;
   border: solid 1px #038384;
+  border-radius: 3px;
+}
+
+.black_button  h3{
+font-weight: lighter;
 }
 
 .desc p{
@@ -276,36 +385,44 @@ input{
   min-height: 50%;
 }
 
+.desc,.boxes{
+  margin:20px 0;
+}
+
 .service_box{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   width: 32%;
-  height: 250px;
-  padding: 15px;
+  height: 220px;
+  padding: 20px;
   background-color: #191c1e;
   border-radius: 10px;
 }
 
 .icons .fa-truck-loading, .icons .fa-temperature-low, .icons .fa-boxes{
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color:#038384;
+}
+.icons, .service_title{
+  margin: 10px 0;
 }
 
 .service_box h3{
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
+
 .round_icon{
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   padding:5px;
   background-color:#16282e;
   border-radius: 50%;
 }
 
 .fa-arrow-right{
-  font-size: 1.5rem;
+  font-size: 1rem;
   color:#038384;
 }
 
@@ -375,6 +492,7 @@ input{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   height:500px;
   background-image: url("../img/bg-10.jpg");
@@ -383,10 +501,18 @@ input{
   background-position: center;
 
 }
+#section_4 h2{
+  font-size: 2rem;
+  margin: 10px 0;
+}
+#section_4 h4{
+  font-size: .8rem;
+}
 .result_boxes{
   width: 100%;
 }
 .result_box{
+  justify-content: center;
   width: 25%;
   height: 150px;
   border: solid 1px red;
@@ -398,20 +524,7 @@ input{
 
 }
 
-
-.label{
-  display: inline-block;
-  padding: 5px;
-  margin:0 5px;
-  border-radius: 5px;
-  font-size: 2rem;
-  background-color: rgba(3,131,132,.2);
-}
-
-
-
-
-/* ----------------- SECTION 5 LAYOUT -------------  */
+/* ----------------- SECTION 5  FEEDBACK LAYOUT -------------  */
 
 
 #section_5{
@@ -420,16 +533,20 @@ input{
   justify-content: center;
   align-items: center;
   background-color: #191c1e;
+  text-align: center;
 }
 
-/* .title_feedback{
-  /* display: flex;
-  justify-content: center;
-}*/
+#section_5 h4{
+  font-size: .8rem;
+}
+#section_5 h2{
+  font-size: 2rem;
+  margin: 10px 0;
+}
 
-#section5 .service_box .icons img{
-  max-width: 50px;
-  height: auto;
+#section_5  img{
+  max-width:90px;
+  min-height: 20px;
 }
 
 .quotation_marks{
@@ -440,28 +557,21 @@ input{
 }
 
 #subtitle{
-  width: 55%;
+  width: 60%;
   text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.feedback_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 32%;
+  height: 220px;
+  padding: 20px;
+  background-color: #191c1e;
+  border-radius: 10px;
+  text-align: left;
+}
 
 
 
@@ -489,9 +599,25 @@ input{
 .green_text{
   color: #058283;
 }
-.get_touch_left h2 span,.get_touch_left h4 {
-
+.get_touch_left h2 {
+  font-size: 2rem;
+  margin: 10px 0;
 }
+
+.get_touch_left h4 {
+  font-size: .8rem;
+  margin:10px 0;
+}
+
+.get_touch_left p {
+  margin:20px 0;
+}
+
+.form_contact{
+  margin:30px 0;
+}
+
+
 
 
 
@@ -507,9 +633,9 @@ input{
 }
 .send_button{
   width: 70px;
-  height: 35px;
+  height: 30px;
   background-color:#038384 ;
-  border-radius: 5px;
+  border-radius: 3px;
 
 }
 .send_button h3{
@@ -522,14 +648,29 @@ font-weight: lighter;
   color:#69696d;
 }
 
-.get_touch_right p, .get_touch_right div{
+.get_touch_right p{
   margin:10px 0;
 }
 
-.get_touch_right a,.get_touch_right i{
+.get_touch_right a{
+  color: #038384 ;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+
+.get_touch_right i{
+  text-align: center;
+  background-color: #daeced;
+  border-radius: 50%;
+  padding:5px;
+  width: 30px;
+  height: 30px;
   color: #038384 ;
   text-decoration: none;
 }
+
+
 .get_touch_right h2{
   color: #21333e;
 
@@ -540,20 +681,26 @@ font-weight: lighter;
   justify-content: center;
   align-items: center;
   width: 40%;
-  height: 40px;
+  height: 30px;
   color: #038384 ;
   border: solid 1px #038384 ;
-  border-radius: 5px;
+  border-radius: 3px;
 
 }
 
- #section_6 form input[type=text]{
+.view_map h3{
+  font-weight: normal;
+}
+
+
+
+ #section_6 form input{
    width: 48%;
    height: 30px;
    border: none;
    margin: 5px 0;
    padding:5px;
-   border-radius: 5px;
+   border-radius: 3px;
    color:#21333e;
    background-color: #ececec;
 }
@@ -563,6 +710,7 @@ font-weight: lighter;
   height: 100px;
   resize: none;
   border: none;
+  border-radius: 3px;
   padding:5px;
   margin: 5px 0;
   color:#21333e;
@@ -636,44 +784,59 @@ footer ul li {
 }
 
 .footer_box{
-
   width: 25%;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #19191f;
+}
+.footer_box i{
+color: red;
 
 }
 .title_footer{
   margin:10px 0;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
 
   color: white;
 
 }
+
+.button_footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 30px;
+  border:solid 1px #058283;
+  border-radius: 3px;
+}
+
 #foot_links{
   width: 100%;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #foot_links div{
-  margin: 0 20px;
+  margin: 0 10px;
 }
 #foot_links i{
   font-weight: lighter;
   color: #bcbdbd;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 #foot_links h1{
   font-size: 1.25rem;
-  margin: 10px 10px;
+  margin: 10px 5px;
 }
 
 #foot_links ul li{
+  font-size: .8rem;
   color: #bcbdbd;
-  margin:5px 0;
+  margin:10px 0;
 }
 
 #foot_links ul li a{
@@ -686,9 +849,12 @@ footer ul li {
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
+  min-height: 100%;
+}
 
-  min-height: 80%;
-
+#footer_contacts p{
+  font-size: .8rem;
+  margin-left: 10px;
 }

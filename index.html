@@ -22,11 +22,11 @@
         <!-- TOP FIXED NAVBAR -->
         <div class="fast_contacts container">
           <div id="open_hours">
-            <span>Open Hours: Mon- Sat - 9:00 - 18:00</span>
+            <i class="fas fa-clock"></i><span>Open Hours: Mon- Sat - 9:00 - 18:00</span>
           </div>
           <div class="contacts">
-            <a href="#">+1 (305) 1234-5678</a>
-            <a href="#">hello@example.com</a>
+            <i class="fas fa-phone-alt"></i><a href="#">+1 (305) 1234-5678</a>
+            <i class="fas fa-envelope"></i><a href="#">hello@example.com</a>
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-linkedin-in"></i>
@@ -36,20 +36,15 @@
 
         <!-- JUMBOTRON -->
         <div id="jumbotron" >
-          <div class="container">
+          <div class="container flex-column">
 
             <div id="nav_links">
               <div class="flex-space-between">
                 <div class="navbar_left">
                   <!-- LOGO CREATION-->
 
-                  <div class="logo_divs flex-center">
-                    <div class="nex">
-                      <h1>NEX</h1>
-                    </div>
-                    <div class="gen">
-                      <h1>GEN</h1>
-                    </div>
+                  <div class="logo">
+                      <h2><span id="nex" class="logo_label green_text">NEX</span>GEN</h2>
                   </div>
 
                 </div>
@@ -71,9 +66,10 @@
 
             <div id="opening">
 
-              <h3>LOGISTICS SERVICES</h3>
-              <h1>CARGO </h1> <h1>TRANSPORT</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <h3 class="green">LOGISTICS SERVICES</h3>
+              <h1>CARGO</h1>
+              <h1>TRANSPORT</h1>
+              <p>Fractional or exclusive road cargo transportation to all <br> regions, with small, medium and large vehicles. </p>
 
               <div id="buttons">
                 <div class="button_get_in_touch">
@@ -99,20 +95,20 @@
         <div class="container flex-space-between ">
 
           <div id="excellence">
-            <h4>WHO WE ARE</h4>
+            <h4 class="green">WHO WE ARE</h4>
             <h2><span class="label green_text"><i class="far fa-gem"></i>Excellence</span>in Transport</h2>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p id="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 <ul id="excellence_list">
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Lorem ipsum dolor sit amet</li>
                 </ul>
 
           </div>
@@ -121,8 +117,11 @@
 
           <div id="vehicles">
 
+              <h3 class="vehicle_title">Vehicle types</h3>
+
+
             <div class="vehicle_box">
-              <h3>Vehicle types</h3>
+
               <div class="vehicle flex-space-between ">
                 <div class="truck">
                   <img src="img/truck-1.png" alt="truck">
@@ -134,9 +133,10 @@
                 </div>
               </div>
             </div>
+            <hr class="separator">
 
             <div class="vehicle_box">
-              <h3>Vehicle types</h3>
+
               <div class="vehicle flex-space-between ">
                 <div class="truck">
                   <img src="img/truck-1.png" alt="truck">
@@ -148,9 +148,9 @@
                 </div>
               </div>
             </div>
-
+            <hr class="separator">
             <div class="vehicle_box">
-              <h3>Vehicle types</h3>
+
               <div class="vehicle flex-space-between ">
                 <div class="truck">
                   <img src="img/truck-1.png" alt="truck">
@@ -162,9 +162,9 @@
                 </div>
               </div>
             </div>
-
+            <h3 class="vehicle_title">Certification</h3>
             <div class="vehicle_box">
-                <h3>Certification</h3>
+
                 <div class="cert-logo flex-space-between">
                   <img src="img/certificate.png" alt="certificate">
                   <img src="img/certificate.png" alt="certificate">
@@ -179,14 +179,14 @@
       <section id="section_2">
         <div class="container">
 
-          <h4>ROAD TRANSPORT</h4>
+          <h4 class="green">ROAD TRANSPORT</h4>
 
             <h2>Main <span class="label">Services</span> </h2>
 
 
 
           <div class=" desc flex-space-between">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo . </p>
+            <p class="grey">With all of this expertise and capability comes an inrivalled commitment to customers service. We will work hard to understand your needs in order to develop a productive, long-term partnership. </p>
             <div class="black_button flex-center">
               <h3>SEE ALL</h3>
             </div>
@@ -205,7 +205,7 @@
                   <i class="fas fa-arrow-right"></i>
               </div>
               <h3 class="service_title">Technology</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+              <p class="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
             </div>
 
             <div class="service_box">
@@ -215,8 +215,8 @@
                 </div>
                   <i class="fas fa-arrow-right"></i>
               </div>
-              <h3 class="service_title">Technology</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+              <h3 class="service_title">Reefer cargo</h3>
+              <p class="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
             </div>
 
             <div class="service_box">
@@ -226,8 +226,8 @@
                 </div>
                   <i class="fas fa-arrow-right"></i>
               </div>
-              <h3 class="service_title">Technology</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+              <h3 class="service_title">Dry Cargo</h3>
+              <p class="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
         </div>
@@ -298,7 +298,7 @@
       <section id="section_4">
 
         <div class="container flex-column">
-          <h4>WHAT ARE WE DOING</h4>
+          <h4 class="green">WHAT ARE WE DOING</h4>
           <div class="title_services">
 
               <h2> <span class="label">Results</span> in Numbers</h2>
@@ -328,45 +328,45 @@
       <!-- SECTION_5 FEEDBACK-->
 
       <section id="section_5">
-        <div class="container flex-column">
-          <h4>CUSTOMERS TESTIMONIALS</h4>
+        <div class="container center_col">
+          <h4 class="green">CUSTOMERS TESTIMONIALS</h4>
 
               <h2>Trusted<span class="label">Feedback</span></h2>
 
 
-          <p id="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p id="subtitle" class="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
 
           <div class="boxes flex-space-between">
 
-            <div class="service_box">
-              <div class="icons flex-space-between">
+            <div class="feedback_box">
+
                   <img src="img/logo-1.png" alt="woocommerce">
-              </div>
-              <h3 class="service_title">Technology</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+
+
+              <p class="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
               <div class="quotation_marks">
                   <i class="fas fa-quote-right"></i>
               </div>
             </div>
 
-            <div class="service_box">
+            <div class="feedback_box">
               <div class="icons flex-space-between">
                   <img src="img/logo-2.png" alt="wordpress">
               </div>
-              <h3 class="service_title">Technology</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+
+              <p class="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
               <div class="quotation_marks">
                   <i class="fas fa-quote-right"></i>
               </div>
             </div>
 
-            <div class="service_box">
+            <div class="feedback_box">
               <div class="icons flex-space-between">
                   <img src="img/logo-3.png" alt="wordpress">
               </div>
-              <h3 class="service_title">Technology</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+
+              <p class="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
               <div class="quotation_marks">
                   <i class="fas fa-quote-right"></i>
               </div>
@@ -382,12 +382,12 @@
 
 
           <div class="get_touch_left">
-             <h4>SEND A MESSAGE</h4>
+             <h4 class="green">SEND A MESSAGE</h4>
             <div class="title_services">
               <h2>Get in<span class="label green_text">Touch</span></h2>
 
             </div>
-            <p>We will respond to your message as soon as possible.</p>
+            <p class="black">We will respond to your message as soon as possible.</p>
 
             <form class="contact_form" action="index.html" method="post">
               <div class="row">
@@ -410,18 +410,18 @@
 
           <div class="get_touch_right">
 
-            <h2>Example Inc.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-            <div class="">
-              <i class="fas fa-phone-alt"></i>
+            <h2 class="black">Example Inc.</h2>
+            <p class="black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="black"> Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+            <div class="form_contact">
+            <i class="fas fa-phone-alt"></i>
               <a href="phone_number">+1 (305) 1234-5678</a>
             </div>
-            <div class="">
+            <div class="form_contact">
               <i class="fas fa-envelope"></i>
               <a href="#">hello@example.com</a>
             </div>
-            <div class="">
+            <div class="form_contact">
               <i class="fas fa-map-marker-alt"></i>
               <a href="#">Main Avenue, 987</a>
             </div>
@@ -455,24 +455,20 @@
               <!-- LOGO CREATION-->
 
               <div class="logo_divs flex-center">
-                  <h2><span class="label green_text">NEX</span>GEN</h2>
-
+                  <h2><span class="logo_label green_text">NEX</span>GEN</h2>
               </div>
 
+              <!-- CONTACTS-->
 
-              <p>A functional HTML template for Corporate & Business</p>
+              <p class="grey">{{desc}}</p>
 
               <div class="">
                 <ul>
-                  <li> <i :class="footer_contacts[0].icon"></i> {{footer_contacts[0].phone_number}}</li>
-                  <li> <i :class="footer_contacts[1].icon"></i> {{footer_contacts[1].mail}}</li>
-                  <li> <i :class="footer_contacts[2].icon"></i> {{footer_contacts[2].address}}</li>
+                  <li v-for="(item, index) in footer_contacts"> <i :class="footer_contacts[index].icon"></i> {{footer_contacts[index].text}}</li>
                 </ul>
-
-
               </div>
 
-              <div class="button_get_in_touch">
+              <div class="button_footer">
                 <h3>GET IN TOUCH</h3>
               </div>
 
